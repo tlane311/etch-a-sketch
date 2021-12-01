@@ -1,0 +1,19 @@
+*{
+    --square-size: 32px;
+    --square-gap: 0px;
+}
+
+div#grid-container{
+    display:flex;
+}
+
+div.grid-element{
+    height:var(--square-size);
+    width:var(--square-size);
+    background:fuchsia;
+    margin:var(--square-gap);
+}
+
+div.hovered{
+    background:goldenrod;
+}
