@@ -1,6 +1,15 @@
-*{
-    --square-size: 32px;
+:root{
+    --square-size: 60px;
     --square-gap: 0px;
+    --color-1: #5D001E;
+    --color-2: #E3E2DF;
+    --color-3: #E3AFBC;
+    --color-4: #9A1750;
+    --color-5: #EE4C7C;
+    font-size:16px;
+    background-color:var(--color-3);
+    box-sizing:border-box;
+    font-family:serif;
 }
 
 div#grid-container{
@@ -10,10 +19,62 @@ div#grid-container{
 div.grid-element{
     height:var(--square-size);
     width:var(--square-size);
-    background:fuchsia;
+    background:var(--color-2);
     margin:var(--square-gap);
 }
 
 div.hovered{
-    background:goldenrod;
+    background:var(--color-1);
+}
+
+#app{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:32px;
+    padding: 64px;
+    background-color:var(--color-4);
+    border-radius:128px 128px 32px 32px;
+}
+
+#button-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content:space-between;
+}
+
+#button-container > form {
+    margin-top:16px;
+    display:flex;
+    flex-direction: column-reverse;
+    gap:16px;
+}
+
+#button-container form input{
+    font-size:2rem;
+    width:256px;
+}
+
+#app > h1{
+    color:var(--color-2);
+    font-size:4rem;
+}
+
+button{
+    border:none;
+    box-shadow:none;
+    font-size:2rem;
+    height:256px;
+    width:256px;
+    border-radius:1000px;
+    background-color:var(--color-2);
+    color:var(--color-1);
+    transition:background-color 1s;
+    cursor:pointer;
+    box-shadow: 8px 8px 2px 2px rgba(0,0,0,.25);
+}
+
+button:hover{
+    background-color:var(--color-3);
 }

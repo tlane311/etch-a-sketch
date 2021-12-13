@@ -19,7 +19,7 @@ function createAndBindBoard(){
 }
 
 
-function updateState({ count}){
+function updateState({count}){
     state.count = count;
 
     function updateCSSVariables(){
